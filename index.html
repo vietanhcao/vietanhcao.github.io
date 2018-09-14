@@ -4,16 +4,16 @@
 	<meta charset="UTF-8">
 	<title>template</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/all.css">
+	<!-- <link rel="stylesheet" href="css/all.css"> -->
+	
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/1.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
 	crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&amp;subset=vietnamese" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-	crossorigin="anonymous"></script>
+	
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,700&amp;subset=vietnamese"
-	 rel="stylesheet">
+	rel="stylesheet">
 	
 </head>
 <body>
@@ -57,6 +57,9 @@
 								</li>
 								<li class="nav-item chuden">
 									<a class="nav-link" href="#">Contact</a>
+								</li>
+								<li class="nav-item chuden">
+									<a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal">Login</a>
 								</li>
 							</ul>
 						</div>
@@ -129,6 +132,60 @@
 				<span class="sr-only">Next</span>
 			</a>
 		</div>
+	</div>
+	<div class="bannerphu">
+		<div class="container">
+			<div class="row">
+				<div class="col-4">
+					<div class="conten">
+						<img src="images/banner-01.jpg" alt="">
+						<a href="" class="contentto">
+							<div class="chutren">
+								<h3>Women</h3>
+								<p>Spring 2018</p>
+							</div>
+							<div class="chuduoi">
+								<div>SHOP NOW</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<!-- hetcol -->
+				<div class="col-4">
+					<div class="conten">
+						<img src="images/banner-02.jpg" alt="">
+						<a href="" class="contentto">
+							<div class="chutren">
+								<h3>Women</h3>
+								<p>Spring 2018</p>
+							</div>
+							<div class="chuduoi">
+								<div>SHOP NOW</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<!-- hetcol -->
+				<div class="col-4">
+					<div class="conten">
+						<img src="images/banner-03.jpg" alt="">
+						<a href="" class="contentto">
+							<div class="chutren">
+								<h3>Accessories</h3>
+								<p>Spring 2018</p>
+							</div>
+							<div class="chuduoi">
+								<div class="chuduoibe">SHOP NOW</div>
+							</div>
+							
+						</a>
+					</div>
+				</div>
+				<!-- hetcol -->
+			</div>
+			<!-- hetrow -->
+		</div>
+		<!-- hetcontaner -->
 	</div>
 	<div class="main">
 		<div class="container">
@@ -432,7 +489,7 @@
 				<div class="col-3">
 					<h3>NEWSLETTER</h3>
 					<div class="inputduoi">
-						<input type="email" placeholder=" email@example.com" >
+						<input type="email" placeholder=" email@example.com" name="email"requiredx >
 						<div class="inputborder"></div>
 					</div>
 					<button type="button" class="btn btn-outline-info">subcribe</button>
@@ -453,20 +510,84 @@
 				<a href="">Colorlib</a>
 			</p>
 		</div>
-		<div class="fixed-bottom nutscroll">
+		<div class="nutscroll">
 			<button>
 				<i class="fas fa-chevron-up"></i>
 			</button>
 		</div>
 	</footer>
 	
+	<!-- Modal -->
+	<div class="modal fade login" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content khoi-modal">
+				<div class="header">
+					<h5 class="welcom text-center" >Welcome</h5>
+					<a href="#" class="text-center logoduoi">
+						<img src="images/logo.png" class="img-fluid"
+						alt="">
+					</a>
+					<button type="button" class="close nutxoa" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="inputduoi email">
+						<input type="text"  name="email" required>
+						<div class="inputborder"></div>
+						<label for="">Email</label>
+					</div>
+					<div class="inputduoi email" >
+						<input type="password"  name="password" required>
+						<div class="inputborder"></div>
+						<label for="">Password</label>
+					</div>
+					
+					<button type="button" class="btn btn-outline-info">subcribe</button>
+					<div class="text-center quenmk">
+						<span class="txt1">
+							Forgot
+						</span>
+						<a class="txt2" href="#">
+							Username / Password?
+						</a>
+					</div>
+					<div class="loginwith text-center">
+						<a href="#" class="login-face">
+							<i class="fab fa-facebook-f"></i>
+						</a>	
+						<a href="#" class="login-twitter">
+							<i class="fab fa-twitter"></i>
+						</a>
+						<a href="#" class="login-google">
+							<i class="fab fa-google"></i>
+						</a>
+					</div>
+					<div class="text-center dangky">
+						<span class="txt1">
+							Don’t have an account?
+						</span>
+						
+						<a class="txt2" href="#">
+							Sign Up
+						</a>
+					</div>
+					
+					
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
 	
 	
 	
 	
 	
-	
-	<script src="js/jquery-3.2.1.slim.min.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	crossorigin="anonymous"></script>
+	<!-- <script src="js/jquery-3.2.1.slim.min.js" type="text/javascript" charset="utf-8" async defer></script> -->
 	<script src="js/popper.min.js" type="text/javascript" charset="utf-8" async defer></script>
 	<script src="js/bootstrap.js" type="text/javascript" charset="utf-8" async defer></script>
 	<script src="js/1.js" type="text/javascript" charset="utf-8" async defer></script>
