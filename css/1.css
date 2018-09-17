@@ -16,7 +16,7 @@
     text-decoration: none;
 }
 
-i.fab.fa-google {
+i.fab.fa-google{
     background: #ea4335;
     width: 50px;
     font-size: 23px;
@@ -25,6 +25,7 @@ i.fab.fa-google {
     color: white;
     border-radius: 50%;
     margin-left: 20px;
+    transition: 0.4s;
 }
 
 i.fab.fa-twitter {
@@ -36,6 +37,7 @@ i.fab.fa-twitter {
     color: white;
     margin-left: 20px;
     border-radius: 50%;
+    transition: 0.4s;
 }
 
 .loginwith i.fab.fa-facebook-f {
@@ -46,6 +48,11 @@ i.fab.fa-twitter {
     line-height: 50px;
     color: white;
     border-radius: 50%;
+    transition: 0.4s;
+}
+
+.loginwith a:hover i {
+    background: #333 !important;
 }
 
 a.txt2 {
@@ -262,6 +269,10 @@ input:focus + .inputborder {
     position: relative;
     border-bottom: 2px solid rgba(204,204,204, 0.1);
     margin-bottom: 21px;
+}
+
+.inputduoi.email {
+    border-bottom: 2px solid rgba(204, 204, 204, 0.74);
 }
 
 button.btn.btn-outline-info {
@@ -545,6 +556,7 @@ li.nav-item.chuden {
 
 .navli li.nav-item.chuden a {
     color: #333 !important;
+    outline: none;
 }
 
 .navli li.nav-item.chuden:hover a {
@@ -811,8 +823,6 @@ a.btn-half-bg.btn-align-center.text-center.nento:hover:after {
 .nutscroll button.hienthi{
     opacity: 0.7;
 }
-
-
 
 @media (min-width: 1200px){
     .container {
