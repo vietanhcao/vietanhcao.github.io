@@ -4,6 +4,71 @@
 	box-sizing: border-box;
 }
 
+div#fullname-error {
+    opacity: 0;
+    visibility: hidden;
+    margin-bottom: 6px;
+}
+
+.fullname i.fas.fa-check , .email-signup i#checkfullname , .username i#checkfullname , .password i#checkfullname , .confirm i#checkfullname{
+    right: 4px;
+    position: absolute;
+    top: 26px;
+    color: #2ff900;
+    opacity: 0;
+}
+
+.modal-content.khoi-modal1 {
+    padding: 40px;
+}
+
+.tosingup i.fas.fa-long-arrow-alt-right {
+    margin-left: 7px;
+    font-size: 14px;
+}
+
+a.tosingup {
+    line-height: 20px;
+    display: block;
+    font-size: 17px;
+    padding: 14px;
+    text-decoration: none;
+    color: #555555;
+    transition: 0.4s;
+}
+
+a.tosingup:hover {
+    color: #6070e7;
+}
+
+.btn-singup {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkbox {
+    height: 29px;
+    line-height: 29px;
+    margin-bottom: 30px;
+}
+
+.khoi-modal1 .inputduoi {
+    border-bottom: 2px solid #bababaa8;
+    margin: 0;
+}
+
+.khoi-modal1 label {
+    font-size: 19px;
+    color: #999999;
+    line-height: 1.2;
+    padding-left: 2px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+
+form.fonticon {font-size: 17px;}
+
 .loginwith.text-center {
     margin-bottom: 41px;
 }
@@ -71,6 +136,13 @@ a.txt2:hover {
     transform: translateY(-50%)!important;
 }
 
+.modal-dialog.signup-dialog {
+    height: 100vh;
+    margin: inherit !important;
+    width: 100%;
+    float: right;
+}
+
 .inputduoi.email {
     margin: 40px 0;
 }
@@ -116,6 +188,7 @@ button.close.nutxoa {
     width: 25px;
     height: 25px;
     line-height: 0px;
+    outline: none;
 }
 
 .header {margin-bottom: 25px;}
@@ -267,8 +340,9 @@ input:focus + .inputborder {
 
 .inputduoi {
     position: relative;
-    border-bottom: 2px solid rgba(204,204,204, 0.1);
+    border-bottom: 2px solid rgba(204, 204, 204, 0.1);
     margin-bottom: 21px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .inputduoi.email {
@@ -291,6 +365,11 @@ button.btn.btn-outline-info:hover {color: #717fe0;background: white;}
 .modal-body button.btn.btn-outline-info {
     width: 100%;
     margin-bottom: 41px;
+}
+
+.btn-singup button.btn.btn-outline-info {
+    width: 57%;
+    margin: 0;
 }
 
 .modal-body button.btn.btn-outline-info:hover {color: #333;transition: 0.4s;background: #0af55a;}
@@ -382,7 +461,7 @@ img.heart {
 }
 
 p.card-text {
-    font-family: Poppins-Regular;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     line-height: 1.466667;
     letter-spacing: 1px;
@@ -508,7 +587,7 @@ img.card-img-top.room {
 
 
 nav.navbar.navbar-expand-lg.navbar-light.fixed-top.navbar1 {
-    height: 71px;
+    height: 82px;
     transition: 0.4s;
 }
 
@@ -653,6 +732,24 @@ input {
     outline: none;
     height: 33px;
     color: white;
+}
+
+.signup .khoi-modal1 input {
+    background: #fff;
+    height: 50px;
+    font-size: 22px;
+    color: #555;
+    line-height: 1.2rem;
+    padding: 0 2px;
+}
+
+.checkbox input[type="checkbox"] {
+    height: auto !important;
+    width: auto;
+    margin-right: 4px;
+}
+
+.checkbox input[type="checkbox"]:checked {
 }
 
 .email input {
@@ -829,4 +926,21 @@ a.btn-half-bg.btn-align-center.text-center.nento:hover:after {
     max-width: 85%;
     
     }
+}
+@media (min-width: 576px){
+    .modal-dialog {
+    max-width: 520px;
+}
+}
+/* ::placeholder */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #bababa;
+    opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #bababa;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #bababa;
 }
