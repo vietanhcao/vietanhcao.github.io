@@ -20,10 +20,10 @@
 </head>
 <body>
 	
-	<header>
-		<nav class="navbar navbar-expand-lg navbar-light fixed-top navbar1">
+<header>
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top navbar1">
 			
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 			aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -79,7 +79,7 @@
 						<form class="fonticon">
 							<!-- <input class="form-control mr-sm-2 timkiem" type="search" placeholder="Search" aria-label="Search"> -->
 							<a href=""><i class="fas fa-search"></i></a>
-							<a href=""><i class="fas fa-shopping-cart"></i></a>
+							<a href="" data-toggle="modal" data-target="#cart"><i class="fas fa-shopping-cart"></i></a>
 							<a href=""><i class="far fa-heart"></i></a>
 							
 						</form>
@@ -526,6 +526,93 @@
 	</div>
 </footer>
 
+<!-- Modal -->
+<div class="modal fade cart" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog cart-dialog" role="document">
+		<div class="modal-content cart-content">
+			<div class="modal-header cart-header">
+				<h5 class="modal-title" id="exampleModalLabel">Your Cart</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body modal-cart-body">
+				
+				<ul class="body-cart-wrapitem">
+					<li class="body-cart-item d-flex">
+						<div class="body-cart-item-img">
+							<img src="images/item-cart-01.jpg" alt="IMG">
+							<i class="fas fa-times"></i>
+						</div>
+				
+						<div class="body-cart-item-txt d-flex flex-column justify-content-around">
+							<a href="#" class="body-cart-item-name">
+								White Shirt Pleat
+							</a>
+				
+							<span class="body-cart-item-info">
+								1 x $19.00
+							</span>
+						</div>
+					</li>
+				
+					<li class="body-cart-item d-flex">
+						<div class="body-cart-item-img">
+							<img src="images/item-cart-02.jpg" alt="IMG">
+							<i class="fas fa-times"></i>
+						</div>
+				
+						<div class="body-cart-item-txt d-flex flex-column justify-content-around">
+							<a href="#" class="body-cart-item-name">
+								Converse All Star
+							</a>
+				
+							<span class="body-cart-item-info">
+								1 x $39.00
+							</span>
+						</div>
+					</li>
+				
+					<li class="body-cart-item d-flex">
+						<div class="body-cart-item-img">
+							<img src="images/item-cart-03.jpg" alt="IMG">
+							<i class="fas fa-times"></i>
+						</div>
+				
+						<div class="body-cart-item-txt d-flex flex-column justify-content-around">
+							<a href="#" class="body-cart-item-name">
+								Nixon Porter Leather
+							</a>
+				
+							<span class="body-cart-item-info">
+								1 x $17.00
+							</span>
+						</div>
+					</li>
+				</ul>
+				<!-- het bodycard -->
+				<div class="footer-cart">
+					<div class="footer-cart-total">
+						Total: $75.00
+					</div>
+				
+					<div class="footer-cart-buttons d-flex justify-content-between">
+						<a href="shoping-cart.html" class="btn btn-outline-success btn-cart">
+							View Cart
+						</a>
+				
+						<a href="shoping-cart.html" class="btn btn-outline-success btn-cart">
+							Check Out
+						</a>
+					</div>
+				</div>
+
+				
+			</div>
+		</div>
+	</div>
+</div>
+
 <!-- Modal login-->
 <div class="modal fade login" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
 	<div class="modal-dialog" role="document">
@@ -565,7 +652,7 @@
 					
 					<button type="submit" class="btn btn-outline-info" id="loginsubmit" >login</button>
 				</form>
-
+				
 				<div class="text-center quenmk">
 					<span class="txt1">
 						Forgot
@@ -574,7 +661,7 @@
 						Username / Password?
 					</a>
 				</div>
-
+				
 				<div class="loginwith text-center">
 					<a href="#" class="login-face">
 						<i class="fab fa-facebook-f"></i>
@@ -707,6 +794,10 @@
 		</div>
 	</div>
 </div>
+<!-- Button trigger modal -->
+
+
+
 
 
 
