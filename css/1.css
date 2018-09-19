@@ -4,6 +4,14 @@
 	box-sizing: border-box;
 }
 
+.password-email-login {
+    margin-bottom: 20px;
+}
+
+.name-email-login {
+    margin-bottom: 20px;
+}
+
 div#fullname-error {
     opacity: 0;
     visibility: hidden;
@@ -132,7 +140,7 @@ a.txt2:hover {
 .text-center.dangky {}
 
 .modal-dialog {
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%)!important;
 }
 
@@ -144,7 +152,7 @@ a.txt2:hover {
 }
 
 .inputduoi.email {
-    margin: 40px 0;
+    margin-bottom: 5px;
 }
 
 .email label {
@@ -161,7 +169,7 @@ a.txt2:hover {
 .modal-body {}
 
 .modal-content.khoi-modal {
-    padding: 54px;
+    padding: 20px 54px;
 }
 
 a.text-center.logoduoi {
@@ -191,7 +199,7 @@ button.close.nutxoa {
     outline: none;
 }
 
-.header {margin-bottom: 25px;}
+.header {margin-bottom: 40px;}
 
 a.carousel-control-next {
     width: 7%;

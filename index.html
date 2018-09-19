@@ -541,19 +541,29 @@
 				</button>
 			</div>
 			<div class="modal-body">
-				<form action="" class="login-body">
-					<div class="inputduoi email">
-						<input type="text"  name="email" required>
-						<div class="inputborder"></div>
-						<label for="">Email</label>
+				<form action="" class="login-body" method="POST">
+					<div class="name-email-login">
+						<div class="inputduoi email">
+							<input type="text"  name="email" id="nameloginemail" required>
+							<div class="inputborder"></div>
+							<label for="">Email</label>
+						</div>
+						<div class="help-block" id="fullname-error" style="color: red;display: block">
+							tai khoan khong ton tai
+						</div>
 					</div>
-					<div class="inputduoi email" >
-						<input type="password"  name="password" required>
-						<div class="inputborder"></div>
-						<label for="">Password</label>
+					<div class="password-email-login">
+						<div class="inputduoi email" >
+							<input type="password"  name="password" id="passwordloginemail" required>
+							<div class="inputborder"></div>
+							<label for="">Password</label>
+						</div>
+						<div class="help-block" id="fullname-error" style="color: red;display: block">
+							mat khau khong dung
+						</div>
 					</div>
 					
-					<button type="button" class="btn btn-outline-info">login</button>
+					<button type="submit" class="btn btn-outline-info" id="loginsubmit" >login</button>
 				</form>
 
 				<div class="text-center quenmk">

@@ -124,6 +124,33 @@ $(function() {
             return false;
         } 
     });
+    // viet cho phan login
+
+    $('#loginsubmit').click(function () { 
+        
+        if ($('#nameloginemail').val() !== 'admin') {
+            $('.name-email-login .help-block').css('opacity', 1);
+            $('.name-email-login .help-block').css('visibility', 'visible');
+            return false;
+        }else{
+            $('.name-email-login .help-block').css('opacity', 0);
+            $('.name-email-login .help-block').css('visibility', 'hiden');
+        }
+        if ($('#passwordloginemail').val() == ''){
+            $('.password-email-login .help-block').css('opacity', 0);
+            $('.password-email-login .help-block').css('visibility', 'hiden');
+            
+        }else if ($('#passwordloginemail').val() !== '123456') {
+            $('.password-email-login .help-block').css('opacity', 1);
+            $('.password-email-login .help-block').css('visibility', 'visible');
+            return false;
+        }else{
+            $('.password-email-login .help-block').css('opacity', 0);
+            $('.password-email-login .help-block').css('visibility', 'hiden');
+        }
+        
+        
+    });
 
     
     
