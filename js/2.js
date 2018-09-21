@@ -142,12 +142,12 @@ $(function() {
             filter: danhmuc
         }); 
     });
-    
-    
-    
-    
-    
-    
+    // button search
+
+    $('#btngroupsearch').click(function (e) { 
+        $(this).toggleClass('show-search',2000);
+        $('.search-product').toggleClass('show-search',2000 );
+    });
 });
 
 
