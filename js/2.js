@@ -1,13 +1,5 @@
 $(function() { 
     "use strict";
-    var offset1 = $('.andi1').offset();
-    var top1 = offset1.top - 600;
-    var offset2 = $('.andi2').offset();
-    var top2 = offset2.top - 700;
-    var offset3 = $('.andi3').offset();
-    var top3 = offset3.top - 700;
-    var offset4 = $('.andi4').offset();
-    var top4 = offset4.top - 700;
     $(window).scroll(function () { 
         
         if ($('body,html').scrollTop() > 50){
@@ -16,18 +8,7 @@ $(function() {
             $('.navbar1').removeClass('scrollnav');
         }
         // hieuungcuon
-        if ($('body,html').scrollTop() >= top1){
-            $('.andi1').addClass('hienra');
-        }
-        if ($('body,html').scrollTop() >= top2){
-            $('.andi2').addClass('hienra');
-        }
-        if ($('body,html').scrollTop() >= top3){
-            $('.andi3').addClass('hienra');
-        }
-        if ($('body,html').scrollTop() >= top4){
-            $('.andi4').addClass('hienra');
-        }  
+        
         //hieu ung di len
         if($('html, body').scrollTop() > 300){
             $('.nutscroll button').addClass('hienthi');
@@ -151,8 +132,16 @@ $(function() {
         
         
     });
+    //viet hieu ung filter
 
-    
+    $('.filter-list button').click(function (e) { 
+        let danhmuc = $(this).data('filter'); //get data-filter 
+        $('.filter-list button').removeClass('how-active1');
+        $(this).addClass('how-active1');
+        $('.khoindsp.andi1').isotope({           
+            filter: danhmuc
+        }); 
+    });
     
     
     

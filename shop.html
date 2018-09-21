@@ -7,9 +7,10 @@
 	<!-- <link rel="stylesheet" href="css/all.css"> -->
 	
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/1.css">
+	<link rel="stylesheet" href="css/2.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
 	crossorigin="anonymous">
+	
 	<!-- font -->
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&amp;subset=vietnamese" rel="stylesheet">
 	
@@ -41,12 +42,13 @@
 					
 					<div class="col-sm-8">
 						<ul class="navbar-nav m-auto menu-bar navli ">
-							<li class="nav-item  active-nav">
-								<a class="nav-link" href="#" id="navbarDropdownMenuLink">
+							<li class="nav-item ">
+								<a class="nav-link " href="index.html" id="navbarDropdownMenuLink" >
 								Home</a>
+							
 							</li>
-							<li class="nav-item chuden">
-								<a class="nav-link" href="shop.html">Shop</a>
+							<li class="nav-item chuden active-nav">
+								<a class="nav-link" href="#">Shop</a>
 							</li>
 							<li class="nav-item chuden hot">
 								<a class="nav-link" href="#">Features</a>
@@ -88,129 +90,256 @@
 	<!-- het nav -->
 </header>
 
-<div class="banner mb-5">
-	<div id="test" class="carousel slide" data-ride="carousel">
-		<ol class="carousel-indicators">
-			<li data-target="#test" data-slide-to="0" class="active"></li>
-			<li data-target="#test" data-slide-to="1"></li>
-			<li data-target="#test" data-slide-to="2"></li>
-		</ol>
-		<div class="carousel-inner">
-			<div class="carousel-item anh1 active">
-				<div class="container">
-					<div class="ndslide1">
-						<h3>Women Collection 2018</h3>
-						<h2>NEW SEASON</h2>
-						<div class="notdelay">
-							<a class="btn btn-outline-success" href="">SHOPNOW</a>
+<div class="container">
+	
+		<div class="khoifilter">
+			<div class="filter-list">
+				<button class="how-active1" data-filter="*">
+					All Products
+				</button>
+		
+				<button class=""  data-filter=".women">
+					Women
+				</button>
+		
+				<button class=""  data-filter=".men">
+					Men
+				</button>
+		
+				<button class=""  data-filter=".bag">
+					Bag
+				</button>
+		
+				<button class=""  data-filter=".shoes">
+					Shoes
+				</button>
+		
+				<button class=""  data-filter=".watches">
+					Watches
+				</button>
+			</div>
+		
+			<div class="filter-search">
+				<!-- <div class="flex-c-m stext-106 cl6 size-104 bor4 pointer hov-btn3 trans-04 m-r-8 m-tb-4 js-show-filter">
+					<i class="icon-filter cl2 m-r-6 fs-15 trans-04 zmdi zmdi-filter-list"></i>
+					<i class="icon-close-filter cl2 m-r-6 fs-15 trans-04 zmdi zmdi-close dis-none"></i>
+					Filter
+				</div> -->
+				<div class="btn btn-outline-success group-search">
+					<a href=""><i class="fas fa-search"></i></a>
+					<i class="icon-close-search cl2 m-r-6 fs-15 trans-04 zmdi zmdi-close dis-none"></i>
+					Search
+				</div>
+			</div>
+		
+			<!-- Search product -->
+			<!-- <div class="dis-none panel-search w-full p-t-10 p-b-15" style="display: block;">
+				<div class="bor8 dis-flex p-l-15">
+					<button class="size-113 flex-c-m fs-16 cl2 hov-cl1 trans-04">
+						<i class="zmdi zmdi-search"></i>
+					</button>
+		
+					<input class="mtext-107 cl2 size-114 plh2 p-r-15" type="text" name="search-product" placeholder="Search">
+				</div>
+			</div> -->
+		
+			<!-- Filter -->
+			<!-- <div class="dis-none panel-filter w-full p-t-10">
+				<div class="wrap-filter flex-w bg6 w-full p-lr-40 p-t-27 p-lr-15-sm">
+					<div class="filter-col1 p-r-15 p-b-27">
+						<div class="mtext-102 cl2 p-b-15">
+							Sort By
+						</div>
+		
+						<ul>
+							<li class="p-b-6">
+								<a href="#" class="filter-link stext-106 trans-04">
+									Default
+								</a>
+							</li>
+		
+							<li class="p-b-6">
+								<a href="#" class="filter-link stext-106 trans-04">
+									Popularity
+								</a>
+							</li>
+		
+							<li class="p-b-6">
+								<a href="#" class="filter-link stext-106 trans-04">
+									Average rating
+								</a>
+							</li>
+		
+							<li class="p-b-6">
+								<a href="#" class="filter-link stext-106 trans-04 filter-link-active">
+									Newness
+								</a>
+							</li>
+		
+							<li class="p-b-6">
+								<a href="#" class="filter-link stext-106 trans-04">
+									Price: Low to High
+								</a>
+							</li>
+		
+							<li class="p-b-6">
+								<a href="#" class="filter-link stext-106 trans-04">
+									Price: High to Low
+								</a>
+							</li>
+						</ul>
+					</div>
+		
+					<div class="filter-col2 p-r-15 p-b-27">
+						<div class="mtext-102 cl2 p-b-15">
+							Price
+						</div>
+		
+						<ul>
+							<li class="p-b-6">
+								<a href="#" class="filter-link stext-106 trans-04 filter-link-active">
+									All
+								</a>
+							</li>
+		
+							<li class="p-b-6">
+								<a href="#" class="filter-link stext-106 trans-04">
+									\$0.00 - \$50.00
+								</a>
+							</li>
+		
+							<li class="p-b-6">
+								<a href="#" class="filter-link stext-106 trans-04">
+									\$50.00 - \$100.00
+								</a>
+							</li>
+		
+							<li class="p-b-6">
+								<a href="#" class="filter-link stext-106 trans-04">
+									\$100.00 - \$150.00
+								</a>
+							</li>
+		
+							<li class="p-b-6">
+								<a href="#" class="filter-link stext-106 trans-04">
+									\$150.00 - \$200.00
+								</a>
+							</li>
+		
+							<li class="p-b-6">
+								<a href="#" class="filter-link stext-106 trans-04">
+									\$200.00+
+								</a>
+							</li>
+						</ul>
+					</div>
+		
+					<div class="filter-col3 p-r-15 p-b-27">
+						<div class="mtext-102 cl2 p-b-15">
+							Color
+						</div>
+		
+						<ul>
+							<li class="p-b-6">
+								<span class="fs-15 lh-12 m-r-6" style="color: #222;">
+									<i class="zmdi zmdi-circle"></i>
+								</span>
+		
+								<a href="#" class="filter-link stext-106 trans-04">
+									Black
+								</a>
+							</li>
+		
+							<li class="p-b-6">
+								<span class="fs-15 lh-12 m-r-6" style="color: #4272d7;">
+									<i class="zmdi zmdi-circle"></i>
+								</span>
+		
+								<a href="#" class="filter-link stext-106 trans-04 filter-link-active">
+									Blue
+								</a>
+							</li>
+		
+							<li class="p-b-6">
+								<span class="fs-15 lh-12 m-r-6" style="color: #b3b3b3;">
+									<i class="zmdi zmdi-circle"></i>
+								</span>
+		
+								<a href="#" class="filter-link stext-106 trans-04">
+									Grey
+								</a>
+							</li>
+		
+							<li class="p-b-6">
+								<span class="fs-15 lh-12 m-r-6" style="color: #00ad5f;">
+									<i class="zmdi zmdi-circle"></i>
+								</span>
+		
+								<a href="#" class="filter-link stext-106 trans-04">
+									Green
+								</a>
+							</li>
+		
+							<li class="p-b-6">
+								<span class="fs-15 lh-12 m-r-6" style="color: #fa4251;">
+									<i class="zmdi zmdi-circle"></i>
+								</span>
+		
+								<a href="#" class="filter-link stext-106 trans-04">
+									Red
+								</a>
+							</li>
+		
+							<li class="p-b-6">
+								<span class="fs-15 lh-12 m-r-6" style="color: #aaa;">
+									<i class="zmdi zmdi-circle-o"></i>
+								</span>
+		
+								<a href="#" class="filter-link stext-106 trans-04">
+									White
+								</a>
+							</li>
+						</ul>
+					</div>
+		
+					<div class="filter-col4 p-b-27">
+						<div class="mtext-102 cl2 p-b-15">
+							Tags
+						</div>
+		
+						<div class="flex-w p-t-4 m-r--5">
+							<a href="#" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
+								Fashion
+							</a>
+		
+							<a href="#" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
+								Lifestyle
+							</a>
+		
+							<a href="#" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
+								Denim
+							</a>
+		
+							<a href="#" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
+								Streetstyle
+							</a>
+		
+							<a href="#" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
+								Crafts
+							</a>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="carousel-item anh2">
-				<div class="container">
-					<div class="ndslide1">
-						<h3>Men New-Season</h3>
-						<h2>Jackets & Coats</h2>
-						<div class="notdelay">
-							<a class="btn btn-outline-success" href="">SHOPNOW</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="carousel-item anh3">
-				<div class="container">
-					<div class="ndslide1">
-						<h3>Men Collection 2018</h3>
-						<h2>New arrivals</h2>
-						<div class="notdelay">
-							<a class="btn btn-outline-success" href="">SHOPNOW</a>
-						</div>
-					</div>
-				</div>
-			</div>
+			</div> -->
 		</div>
-		<a class="carousel-control-prev" href="#test" role="button" data-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="sr-only">Previous</span>
-		</a>
-		<a class="carousel-control-next" href="#test" role="button" data-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="sr-only">Next</span>
-		</a>
-	</div>
+	
 </div>
-<div class="bannerphu">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-4">
-				<div class="conten">
-					<img src="images/banner-01.jpg" alt="">
-					<a href="" class="contentto">
-						<div class="chutren">
-							<h3>Women</h3>
-							<p>Spring 2018</p>
-						</div>
-						<div class="chuduoi">
-							<div>SHOP NOW</div>
-						</div>
-					</a>
-				</div>
-			</div>
-			<!-- hetcol -->
-			<div class="col-lg-4">
-				<div class="conten">
-					<img src="images/banner-02.jpg" alt="">
-					<a href="" class="contentto">
-						<div class="chutren">
-							<h3>Women</h3>
-							<p>Spring 2018</p>
-						</div>
-						<div class="chuduoi">
-							<div>SHOP NOW</div>
-						</div>
-					</a>
-				</div>
-			</div>
-			<!-- hetcol -->
-			<div class="col-lg-4">
-				<div class="conten">
-					<img src="images/banner-03.jpg" alt="">
-					<a href="" class="contentto">
-						<div class="chutren">
-							<h3>Accessories</h3>
-							<p>Spring 2018</p>
-						</div>
-						<div class="chuduoi">
-							<div class="chuduoibe">SHOP NOW</div>
-						</div>
-						
-					</a>
-				</div>
-			</div>
-			<!-- hetcol -->
-		</div>
-		<!-- hetrow -->
-	</div>
-	<!-- hetcontaner -->
-</div>
-<div class="main">
-	<div class="container">
-		<div class="row">
-			<h3 style="display: block; " class=" text-uppercase text-center m-auto w-100">most popular</h3>
-			<p class="text-center w-100 "style="display: block;color: gray;height: 25px;line-height: 25px;font-size: 11px; color:gray; ">-----------------------</p>
-			<p class="text-center w-100 mb-5 "style="display: block;color: gray;height: 25px;line-height: 25px;font-size: 18px; color:gray; ">From warm parka to trending poncho and elegant jackets, find all the favourite menswear clothing right here.</p>
-			<!-- hettieude tren -->
-			
-		</div>
-	</div>
-</div>
-<!-- het main -->
+
 <div class="noidungsanpham">
 	<div class="container">
 		
-		<div class="card-deck mb-5 andi1">
-			<div class="card" style="border:none;" >
+		<div class="khoindsp andi1">
+			<div class="product women" style="border:none;" >
 				<div class="baoboc">
 					<img class="card-img-top room" src="images/product-01.jpg" alt="Card image cap">
 					<a href="" class="quickview">Quick View</a>
@@ -224,7 +353,7 @@
 					</a>
 				</div>			
 			</div>
-			<div class="card" style="border:none;" >
+			<div class="product women" style="border:none;" >
 				<div class="baoboc">
 					<img class="card-img-top room" src="images/product-02.jpg" alt="Card image cap">
 					<a href="" class="quickview">Quick View</a>
@@ -238,7 +367,7 @@
 					</a>
 				</div>			
 			</div>
-			<div class="card" style="border:none;" >
+			<div class="product men" style="border:none;" >
 				<div class="baoboc">
 					<img class="card-img-top room" src="images/product-03.jpg" alt="Card image cap">
 					<a href="" class="quickview">Quick View</a>
@@ -252,7 +381,7 @@
 					</a>
 				</div>			
 			</div>
-			<div class="card" style="border:none;" >
+			<div class="product women" style="border:none;" >
 				<div class="baoboc">
 					<img class="card-img-top room" src="images/product-04.jpg" alt="Card image cap">
 					<a href="" class="quickview">Quick View</a>
@@ -266,12 +395,12 @@
 					</a>
 				</div>			
 			</div>
-		</div>
+		
 		
 		<!-- end card-deck1 -->
 		
-		<div class="card-deck mb-5 andi2">
-			<div class="card" style="border:none;">
+		
+			<div class="product women" style="border:none;">
 				<div class="baoboc">
 					<img class="card-img-top room" src="images/product-05.jpg" alt="Card image cap">
 					<a href="" class="quickview">Quick View</a>
@@ -285,7 +414,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="card" style="border:none;">
+			<div class="product watches" style="border:none;">
 				<div class="baoboc">
 					<img class="card-img-top room" src="images/product-06.jpg" alt="Card image cap">
 					<a href="" class="quickview">Quick View</a>
@@ -299,7 +428,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="card" style="border:none;">
+			<div class="product women" style="border:none;">
 				<div class="baoboc">
 					<img class="card-img-top room" src="images/product-07.jpg" alt="Card image cap">
 					<a href="" class="quickview">Quick View</a>
@@ -313,7 +442,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="card" style="border:none;">
+			<div class="product women" style="border:none;">
 				<div class="baoboc">
 					<img class="card-img-top room" src="images/product-08.jpg" alt="Card image cap">
 					<a href="" class="quickview">Quick View</a>
@@ -328,10 +457,10 @@
 				</div>
 			</div>
 			
-		</div>	
+			
 		<!-- end cardeck2 -->
-		<div class="card-deck mb-5 andi3">
-			<div class="card" style="border:none;">
+		
+			<div class="product shoes" style="border:none;">
 				<div class="baoboc">
 					<img class="card-img-top room" src="images/product-09.jpg" alt="Card image cap">
 					<a href="" class="quickview">Quick View</a>
@@ -345,7 +474,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="card" style="border:none;">
+			<div class="product women" style="border:none;">
 				<div class="baoboc">
 					<img class="card-img-top room" src="images/product-10.jpg" alt="Card image cap">
 					<a href="" class="quickview">Quick View</a>
@@ -359,7 +488,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="card" style="border:none;">
+			<div class="product men" style="border:none;">
 				<div class="baoboc">
 					<img class="card-img-top room" src="images/product-11.jpg" alt="Card image cap">
 					<a href="" class="quickview">Quick View</a>
@@ -373,7 +502,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="card" style="border:none;">
+			<div class="product men" style="border:none;">
 				<div class="baoboc">
 					<img class="card-img-top room" src="images/product-12.jpg" alt="Card image cap">
 					<a href="" class="quickview">Quick View</a>
@@ -388,10 +517,10 @@
 				</div>
 			</div>
 			
-		</div>
+		
 		<!-- end cardeck3 -->
-		<div class="card-deck mb-5 andi4">
-			<div class="card" style="border:none;">
+		
+			<div class="product women" style="border:none;">
 				<div class="baoboc">
 					<img class="card-img-top room" src="images/product-13.jpg" alt="Card image cap">
 					<a href="" class="quickview">Quick View</a>
@@ -405,7 +534,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="card" style="border:none;">
+			<div class="product women" style="border:none;">
 				<div class="baoboc">
 					<img class="card-img-top room" src="images/product-14.jpg" alt="Card image cap">
 					<a href="" class="quickview">Quick View</a>
@@ -419,7 +548,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="card" style="border:none;">
+			<div class="product watches" style="border:none;">
 				<div class="baoboc">
 					<img class="card-img-top room" src="images/product-15.jpg" alt="Card image cap">
 					<a href="" class="quickview">Quick View</a>
@@ -433,7 +562,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="card" style="border:none;">
+			<div class="product women" style="border:none;">
 				<div class="baoboc">
 					<img class="card-img-top room" src="images/product-16.jpg" alt="Card image cap">
 					<a href="" class="quickview">Quick View</a>
@@ -797,11 +926,12 @@
 
 
 
-<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-crossorigin="anonymous"></script>
+
+<script src="js/jquery-3.3.1.js" type="text/javascript" charset="utf-8" async defer></script>
+<script src="js/isotope.pkgd.min.js"></script>
 <!-- <script src="js/jquery-3.2.1.slim.min.js" type="text/javascript" charset="utf-8" async defer></script> -->
 <script src="js/popper.min.js" type="text/javascript" charset="utf-8" async defer></script>
 <script src="js/bootstrap.js" type="text/javascript" charset="utf-8" async defer></script>
-<script src="js/1.js" type="text/javascript" charset="utf-8" async defer></script>
+<script src="js/2.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
 </html>
