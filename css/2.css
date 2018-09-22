@@ -13,25 +13,9 @@
     padding-top: 10px;
     width: 100%;
     display: none;
-    transition: 0.4s !important;
 }
 
-.search-product.show-search {
-    display: block;
-    animation:  dixuong 1s ease forwards;
-    
-}
-@-webkit-keyframes dixuong {
-    form{
-        transform: translateY(-100%);
-        opacity: 0;
-        
-    }
-    to{
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
+
 
 .bor8 a {
     width: 38px;
@@ -65,7 +49,6 @@
 .khoindsp.andi1 {
     display: flex;
     flex-wrap: wrap;
-    transition: 0.4s all;
 }
 
 .group-search i.fas.fa-search {
@@ -90,21 +73,22 @@
     font-size: 15px;
     line-height: 28px;
     color: #888;
-    transition: 0.4s;
     font-family: 'Roboto', sans-serif;
     position: relative;
 }
 
 .btn.btn-outline-success.group-search.show-search {
     background: #f2f2f2;
+    transition: 0.4s;
 }
 
 .btn.btn-outline-success.group-search.show-search:hover:after {
     background: #717fe0;
     border:  #717fe0;
+    transition: 0.4s;
 }
 
-.btn.btn-outline-success.group-search.show-search:after {content: "";position: absolute;display: block;width: 14px;height: 14px;background-color: #f2f2f2;border-left: 1px solid #e7e7e7;border-bottom: 1px solid #e7e7e7;/* transform-origin: center center; */-webkit-transform: rotate(-45deg);-moz-transform: rotate(-45deg);-ms-transform: rotate(-45deg);-o-transform: rotate(-45deg);transform: rotate(-45deg);left: calc(50% - 7px);bottom: -8px;-webkit-transition: all 0.4s;-o-transition: all 0.4s;-moz-transition: all 0.4s;transition: all 0.4s;}
+.btn.btn-outline-success.group-search.show-search:after {content: "";position: absolute;display: block;width: 14px;height: 14px;background-color: #f2f2f2;border-left: 1px solid #e7e7e7;border-bottom: 1px solid #e7e7e7;/* transform-origin: center center; */-webkit-transform: rotate(-45deg);-moz-transform: rotate(-45deg);-ms-transform: rotate(-45deg);-o-transform: rotate(-45deg);transform: rotate(-45deg);left: calc(50% - 7px);bottom: -8px;transition: 0.4s;}
 
 div#btngroupsearch:before {}
 
@@ -112,9 +96,10 @@ div#btngroupsearch:before {}
     border-color: #717fe0;
     background-color: #717fe0;
     color: #fff;
+    transition: 0.4s;
 }
 
-.filter-list button {color: #888;border-color: transparent;cursor: pointer;transition: 0.4s !important;margin-right: 32px;margin-bottom: 5px;outline: none;}
+.filter-list button {color: #888;border-color: transparent;cursor: pointer;margin-right: 32px;margin-bottom: 5px;outline: none;}
 
 .filter-list button:hover , .how-active1 {
     color: #333 !important;

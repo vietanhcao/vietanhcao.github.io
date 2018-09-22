@@ -133,6 +133,10 @@ $(function() {
         
     });
     //viet hieu ung filter
+    $('.khoindsp.andi1').isotope({
+        itemSelector: '.product',
+        layoutMode: 'fitRows'
+    });
 
     $('.filter-list button').click(function (e) { 
         let danhmuc = $(this).data('filter'); //get data-filter 
@@ -143,10 +147,10 @@ $(function() {
         }); 
     });
     // button search
-
-    $('#btngroupsearch').click(function (e) { 
-        $(this).toggleClass('show-search',2000);
-        $('.search-product').toggleClass('show-search',2000 );
+    
+    $('#btngroupsearch').click(function (e) {    
+        $(this).toggleClass('show-search');     
+        $('.search-product').slideToggle();
     });
 });
 
