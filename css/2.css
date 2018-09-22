@@ -292,7 +292,9 @@ a.tosingup:hover {
 }
 
 
-form.fonticon {font-size: 17px;}
+form.fonticon {font-size: 17px; display: flex;
+    justify-content: flex-end;
+}
 
 .loginwith.text-center {
     margin-bottom: 41px;
