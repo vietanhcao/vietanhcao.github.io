@@ -2,7 +2,7 @@ $(function() {
     "use strict";
     $(window).scroll(function () { 
         
-        if ($('body,html').scrollTop() > 50){
+        if ($('body,html').scrollTop() > 10){
             $('.navbar1').addClass('scrollnav');
         }else{
             $('.navbar1').removeClass('scrollnav');
@@ -151,6 +151,17 @@ $(function() {
     $('#btngroupsearch').click(function (e) {    
         $(this).toggleClass('show-search');     
         $('.search-product').slideToggle();
+    });
+    // [+/- num product ]*/
+    $('.btn-num-product-up').click(function (e) {
+        var numProduct = Number($(this).prev().val()); // lấy giá trị của thàng truoc no va chuyen ve dang so
+        $(this).prev().val(numProduct + 1); //tang gia tri thang input  
+    });
+    $('.btn-num-product-down').click(function (e) {
+        var numProduct = Number($(this).next().val());
+        if (numProduct > 0) {
+            $(this).next().val(numProduct - 1);
+        }
     });
 });
 
