@@ -1,6 +1,6 @@
 $(function() { 
     "use strict";
-
+    
     $(window).scroll(function () { 
         
         if ($('body,html').scrollTop() > 50){
@@ -83,7 +83,7 @@ $(function() {
             $('.confirm .help-block').css('opacity', 1);
             $('.confirm .help-block').css('visibility', 'visible');
             $('.confirm .fas.fa-check').css('opacity', 0);
-
+            
         } else {
             $('.confirm .help-block').css('opacity', 0);
             $('.confirm .help-block').css('visibility', 'hiden');
@@ -107,7 +107,7 @@ $(function() {
         } 
     });
     // viet cho phan login
-
+    
     $('#loginsubmit').click(function () { 
         
         if ($('#nameloginemail').val() !== 'admin') {
@@ -129,21 +129,22 @@ $(function() {
         }else{
             $('.password-email-login .help-block').css('opacity', 0);
             $('.password-email-login .help-block').css('visibility', 'hiden');
-        }
-        
-        
+        } 
     });
-
     // [+/- num product ]*/
-    // $('.btn-num-product-down').on('click', function () {
-    //         var numProduct = Number($(this).next().val());
-    //         if (numProduct > 0) $(this).next().val(numProduct - 1);
-    //     });
-
-    // $('.btn-num-product-up').on('click', function () {
-    //     var numProduct = Number($(this).prev().val());
-    //     $(this).prev().val(numProduct + 1);
-    // });
+    $('.btn-num-product-up').click(function (e) { 
+        var numProduct = Number($(this).prev().val()); // lấy giá trị của thàng truoc no va chuyen ve dang so
+        $(this).prev().val(numProduct + 1); //tang gia tri thang input  
+    });
+    $('.btn-num-product-down').click(function (e) {
+        var numProduct = Number($(this).next().val()); 
+        if (numProduct > 0) {
+            $(this).next().val(numProduct - 1);  
+        }
+    });
+    
+    
+    
     
     
     
