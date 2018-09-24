@@ -4,6 +4,49 @@
 	box-sizing: border-box;
 }
 
+.p-t-65 {
+    padding-top: 65px;
+}
+
+a.stext-107.size-301.tag-btn {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    color: #888;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    margin-bottom: 5px;
+    transition: all 0.4s;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+a.stext-107.size-301.tag-btn:hover {
+    color: #717fe0;
+    border-color: #717fe0;
+}
+
+.size-301 {
+    min-height: 30px;
+}
+
+.stext-107 {
+    font-family: roboto;
+    font-size: 13px;
+    line-height: 1.923;
+}
+
+.khoind-tag-blog {
+    flex-wrap: wrap;
+    display: flex;
+    margin-right: -5px;
+}
+
+.p-b-7 {
+    padding-bottom: 7px;
+}
+
 span.stext-116 {
     color: #888;
     padding-top: 20px;
@@ -72,6 +115,17 @@ li.componen-nd-phai {
     line-height: 1.666667;
 }
 
+a.stext-115.content-archive {
+    color: #888;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    transition: all 0.4s;
+    padding: 2px 0;
+    text-decoration: none;
+}
+
 .bor18 a.stext-115 {
     color: #888;
     display: block;
@@ -92,11 +146,13 @@ ul {
     font-family: roboto;
     font-size: 22px;
     line-height: 1.333333;
+    font-weight: 800;
 }
 
 h4.mtext-112 {
     color: #333;
     padding-bottom: 33px;
+    margin: 0;
 }
 
 .p-t-55 {
@@ -392,7 +448,7 @@ a.stext-101.continune {
     width: 34.5%;
 }
 
-.bread-crumb a.stext-109:hover , a.stext-101.continune:hover , .bor18 a.stext-115:hover , .componen-td-phai a:hover{
+.bread-crumb a.stext-109:hover , a.stext-101.continune:hover , .bor18 a.stext-115:hover , .componen-td-phai a:hover , a.stext-115.content-archive:hover{
     color: #717fe0;
 }
 
