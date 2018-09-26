@@ -99,7 +99,7 @@ div#btngroupsearch:before {}
     transition: 0.4s;
 }
 
-.filter-list button {color: #888;border-color: transparent;cursor: pointer;margin-right: 32px;margin-bottom: 5px;outline: none;}
+.filter-list button {color: #888;border-color: transparent;cursor: pointer;margin-right: 32px;margin-bottom: 5px;outline: none;background: white;}
 
 .filter-list button:hover , .how-active1 {
     color: #333 !important;
