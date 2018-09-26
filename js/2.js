@@ -2,7 +2,7 @@ $(function() {
     "use strict";
     $(window).scroll(function () { 
         
-        if ($('body,html').scrollTop() > 10){
+        if ($(this).scrollTop() > 10){
             $('.navbar1').addClass('scrollnav');
         }else{
             $('.navbar1').removeClass('scrollnav');
@@ -10,7 +10,7 @@ $(function() {
         // hieuungcuon
         
         //hieu ung di len
-        if($('html, body').scrollTop() > 300){
+        if ($(this).scrollTop() > 300){
             $('.nutscroll button').addClass('hienthi');
         }else{
             $('.nutscroll button').removeClass('hienthi');

@@ -1,5 +1,4 @@
 $(function() { 
-    "use strict";
     var offset1 = $('.andi1').offset();
     var top1 = offset1.top - 600;
     var offset2 = $('.andi2').offset();
@@ -9,27 +8,27 @@ $(function() {
     var offset4 = $('.andi4').offset();
     var top4 = offset4.top - 700;
     $(window).scroll(function () { 
-        
-        if ($('body,html').scrollTop() > 50){
+        if ($(this).scrollTop() > 50){
             $('.navbar1').addClass('scrollnav');
+            console.log('daylagi');
         }else{
             $('.navbar1').removeClass('scrollnav');
         }
         // hieuungcuon
-        if ($('body,html').scrollTop() >= top1){
+        if ($(this).scrollTop() >= top1){
             $('.andi1').addClass('hienra');
         }
-        if ($('body,html').scrollTop() >= top2){
+        if ($(this).scrollTop() >= top2){
             $('.andi2').addClass('hienra');
         }
-        if ($('body,html').scrollTop() >= top3){
+        if ($(this).scrollTop() >= top3){
             $('.andi3').addClass('hienra');
         }
-        if ($('body,html').scrollTop() >= top4){
+        if ($(this).scrollTop() >= top4){
             $('.andi4').addClass('hienra');
         }  
         //hieu ung di len
-        if($('html, body').scrollTop() > 300){
+        if ($(this).scrollTop() > 300){
             $('.nutscroll button').addClass('hienthi');
         }else{
             $('.nutscroll button').removeClass('hienthi');
