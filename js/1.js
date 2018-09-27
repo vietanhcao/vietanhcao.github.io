@@ -10,7 +10,6 @@ $(function() {
     $(window).scroll(function () { 
         if ($(this).scrollTop() > 50){
             $('.navbar1').addClass('scrollnav');
-            console.log('daylagi');
         }else{
             $('.navbar1').removeClass('scrollnav');
         }

@@ -4,6 +4,290 @@
 	box-sizing: border-box;
 }
 
+.detailsp .khoiicon-modal i.fas.fa-heart {
+    font-size: 12px;
+}
+
+.detailsp a.khoiicon-modal {
+    color: #666;
+    position: relative;
+    transition: all 0.4s;
+    line-height: 1.0;
+    padding: 2px 5px;
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+.detailsp a.khoiicon-modal:after {
+    content: attr(data-tooltip);
+    font-family: Poppins-Regular;
+    font-size: 12px;
+    color: #888;
+    line-height: 18px;
+    white-space: nowrap;
+    display: block;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ccc;
+    height: 20px;
+    padding: 0px 8px;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 3px 6px 0px rgba(0,0,0,0.18);
+    transition: all 0.2s;
+    opacity: 0;
+}
+
+.detailsp a.khoiicon-modal:hover:after {
+    opacity: 1;
+}
+
+.detailsp .nd-iconheart {
+    border-right: 1px solid #e6e6e6;
+    align-items: center;
+    display: flex;
+    margin-right: 11px;
+    padding-right: 10px;
+}
+
+.detailsp .khoi-iconlk {
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    padding-left: 100px;
+    padding-top: 40px;
+}
+
+.detailsp button.stext-101.size-101.btn-addcart-detail {
+    transition: 0.4s all;
+    border-radius: 23px;
+    background-color: #717fe0;
+    min-width: 161px;
+    height: 46px;
+    font-family: roboto;
+    font-size: 15px;
+    line-height: 1.466667;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+button.stext-101.size-101.btn-addcart-detail:hover {
+    background: #333;
+}
+
+.detailsp .khoinut-modal-nddetail {
+    width: calc(100% - 105px);
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.detailsp .khoiflex-modal-detail {
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.detailsp input.mtext-104 {
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+    color: #666;
+    width: calc(100% - 90px);
+    height: 100%;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+.detailsp .btn-num-product-down:hover, .btn-num-product-up:hover, .btn-apply-coupon:hover , .ndupdate-totals:hover {
+    border-color: #717fe0;
+    background-color: #717fe0;
+    color: #fff;
+    transition: 0.4s;
+}
+.detailsp .wrap-num-product {
+    width: 140px;
+    height: 45px;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    overflow: hidden;
+    display: flex;
+    margin: 10px 20px 10px 0;
+    flex-wrap: wrap;
+}
+.detailsp .btn-num-product-down , .btn-num-product-up {
+    width: 45px;
+    height: 100%;
+    cursor: pointer;
+    color: #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s all;
+}
+.detailsp i.fas.fa-minus {
+    font-size: 12px;
+}
+.detailsp i.fas.fa-plus {
+    font-size: 12px;
+}
+
+.detailsp select.select-2tren {
+    border: 0 !important;
+    clip: rect(0 0 0 0) !important;
+    width: 95% !important;
+    height: 45px;
+    font-family: roboto;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.2;
+    padding-left: 20px !important;
+    background-color: transparent;
+}
+
+.bor8 {
+    border: 1px solid #e6e6e6;
+    border-radius: 2px;
+}
+
+.detailsp .bor8.khoi-chonnd-tren {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.size-204 {
+    width: calc(100% - 105px);
+}
+
+.size-203 {
+    width: 105px;
+}
+
+.detailsp .nddetial-tren .size-203 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.detailsp .nddetial-tren {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.detailsp .khoiphai-modal-nddetail {
+    padding-top: 33px;
+}
+
+.stext-102 {
+    font-size: 14px;
+    line-height: 1.7;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.detailsp p.stext-102 {
+    color: #666;
+    padding-top: 23px;
+    margin: 0;
+}
+
+.mtext-106 {
+    font-family: roboto;
+    font-size: 18px;
+    line-height: 1.388888;
+}
+
+.detailsp span.mtext-106 {
+    color: #333;
+    font-weight: bold;
+}
+
+.mtext-105 {
+    font-family: roboto;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.detailsp h4.mtext-105 {
+    color: #333;
+    padding-bottom: 14px;
+    font-weight: 400;
+}
+
+.detailsp .khoiphai-modal-detial {
+    padding-right: 50px;
+    padding-top: 5px;
+}
+
+.detailsp .slick-list.draggable {
+    width: 100%;
+}
+
+.detailsp .slick-list.draggable img {
+    width: 100%;
+}
+
+.detailsp .slick3-dot-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    border: 2px solid transparent;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.detailsp .khoitrai-modal-detailsp {
+    padding-right: 30px;
+    padding-left: 25px;
+}
+
+.detailsp ul.slick3-dots {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.detailsp ul.slick3-dots li {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 27px;
+}
+
+.detailsp li.slick-active .slick3-dot-overlay {
+    border-color: #ccc;
+}
+
+.detailsp ul.slick3-dots li img {
+    width: 100%;
+}
+
+.detailsp button.close {
+    position: absolute;
+    right: -5px;
+    font-size: 37px;
+    top: -41px;
+}
+
+.detailsp .modal-content.detailsp-modal {
+    padding-bottom: 30px;
+    padding-top: 60px;
+}
+
 .cart-header button.close {
     font-size: 32px;
     padding: 0.6rem;
@@ -205,7 +489,7 @@ i.fab.fa-google{
     transition: 0.4s;
 }
 
-i.fab.fa-twitter {
+.login i.fab.fa-twitter {
     background: #1da1f2;
     width: 50px;
     font-size: 23px;
@@ -248,6 +532,13 @@ a.txt2:hover {
     transform: translateY(-50%)!important;
 }
 
+.detailsp .modal-dialog.detailsp-modal {
+    top: 0;
+    padding-bottom: 30px;
+    padding-top: 60px;
+    transform: inherit !important;
+}
+
 .modal-dialog.cart-dialog {
     height: 100%;
     top: 0px;
@@ -271,6 +562,7 @@ a.txt2:hover {
     top: 50%;
     right: 0;
     transition: 0.4s !important;
+    position: absolute;
 }
 
 .modal.fade.signup .modal-dialog.signup-dialog {
@@ -541,7 +833,7 @@ button.btn.btn-outline-info:hover {color: #717fe0;background: white;}
     color: #00d5ff;
 }
 
-.footer a:hover {
+.footer a:hover , .detailsp .khoiicon-modal:hover{
     color: #717fe0;
 }
 
@@ -1092,6 +1384,11 @@ a.btn-half-bg.btn-align-center.text-center.nento:hover:after {
     }
     .modal-dialog.cart-dialog{
         max-width: calc(100% - 300px);
+
+    }
+    .modal-dialog.detailsp-modal {
+    max-width: 100%;
+    margin: 0;
     }
 }
 /* ::placeholder */
@@ -1105,4 +1402,8 @@ a.btn-half-bg.btn-align-center.text-center.nento:hover:after {
 
 ::-ms-input-placeholder { /* Microsoft Edge */
     color: #bababa;
+}
+/* input number */
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
