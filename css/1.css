@@ -230,10 +230,25 @@ button.stext-101.size-101.btn-addcart-detail:hover {
 
 .detailsp .slick-list.draggable {
     width: 100%;
+    position: relative;
+}
+
+.detailsp .slick-list.draggable img.anh-modal1 {
+    opacity: 1;
 }
 
 .detailsp .slick-list.draggable img {
     width: 100%;
+    position: absolute;
+    opacity: 0;
+}
+
+.detailsp img.anh-modal1 {
+    opacity: 1;
+}
+
+.detailsp img.slick-active-img {
+    opacity: 1 !important;
 }
 
 .detailsp .slick3-dot-overlay {
@@ -286,6 +301,7 @@ button.stext-101.size-101.btn-addcart-detail:hover {
 .detailsp .modal-content.detailsp-modal {
     padding-bottom: 30px;
     padding-top: 60px;
+    height: 90vh;
 }
 
 .cart-header button.close {
