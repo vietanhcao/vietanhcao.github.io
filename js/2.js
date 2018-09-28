@@ -1,7 +1,7 @@
 $(function() { 
     "use strict";
-    //loadpage
-    $('.animsition').animsition();
+   
+    
     $(window).scroll(function () { 
         
         if ($(this).scrollTop() > 10){
