@@ -1,4 +1,7 @@
 $(function() { 
+    "use strict";
+    //loadpage
+    $('.animsition').animsition();
     var offset1 = $('.andi1').offset();
     var top1 = offset1.top - 600;
     var offset2 = $('.andi2').offset();
