@@ -762,7 +762,7 @@ li.body-cart-item.d-flex {
     transition: 0.4s;
 }
 
-.body-cart-item-img:hover:after, .body-cart-item-img:hover .fas.fa-times, .body-cart-item-img:after, .how-itemcart1:hover:after , .how-itemcart1:hover .fas.fa-times {
+.body-cart-item-img:hover:after, .body-cart-item-img:hover .fas.fa-times, .how-itemcart1:hover:after , .how-itemcart1:hover .fas.fa-times {
     opacity: 1;
 }
 
