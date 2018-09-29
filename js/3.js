@@ -134,37 +134,6 @@ $(function() {
         
         
     });
-    //viet hieu ung filter
-    $('.khoindsp.andi1').isotope({
-        itemSelector: '.product',
-        layoutMode: 'fitRows'
-    });
-
-    $('.filter-list button').click(function (e) { 
-        let danhmuc = $(this).data('filter'); //get data-filter 
-        $('.filter-list button').removeClass('how-active1');
-        $(this).addClass('how-active1');
-        $('.khoindsp.andi1').isotope({           
-            filter: danhmuc
-        }); 
-    });
-    // button search
-    
-    $('#btngroupsearch').click(function (e) {    
-        $(this).toggleClass('show-search');     
-        $('.search-product').slideToggle();
-    });
-    // [+/- num product ]*/
-    $('.btn-num-product-up').click(function (e) {
-        var numProduct = Number($(this).prev().val()); // lấy giá trị của thàng truoc no va chuyen ve dang so
-        $(this).prev().val(numProduct + 1); //tang gia tri thang input  
-    });
-    $('.btn-num-product-down').click(function (e) {
-        var numProduct = Number($(this).next().val());
-        if (numProduct > 0) {
-            $(this).next().val(numProduct - 1);
-        }
-    });
     //click vao thay doi anh trong modal detail
     $('.slick3-dots li').click(function (e) {
         let danhmucp = $(this).data('anh');
@@ -172,7 +141,7 @@ $(function() {
         $('.slick3-dots li').removeClass('slick-active');
         $(this).addClass('slick-active');
         // $('.slick-list.draggable img').removeClass('slick-active-img');
-        $('.slick-list.draggable img').each(function (index, element) {
+        $('.detailsp .slick-list.draggable img').each(function (index, element) {
             if ($(this).hasClass(danhmucp)) {
                 $(this).css({
                     opacity: '1'
@@ -186,6 +155,7 @@ $(function() {
         });
 
     });
+
     // rating
     let item = $('.wrap-rating').find('.item-rating');
     $(item).on('mouseenter',function () { 
@@ -209,8 +179,9 @@ $(function() {
     $('.khoindsp').slick({
         slidesToShow: 4,
         slidesToScroll: 4,
-        dots: true,
-        focusOnSelect: true
+        infinite: true,
+        nextArrow: '<button class="next-slick2"><i class="fas fa-angle-left"></i></button>',
+        prevArrow: '<button class="prev-slick2"><i class="fas fa-angle-right"></i></button>',
     });
 
     

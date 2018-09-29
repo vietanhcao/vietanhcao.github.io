@@ -4,6 +4,55 @@
 	box-sizing: border-box;
 }
 
+h3.ltext-106.text-center.related {
+    padding-bottom: 45px;
+    font-family: roboto;
+    font-size: 34px;
+}
+
+section.sec-relate-product {
+    padding-bottom: 50px;
+    padding-top: 45px;
+}
+
+button.prev-slick2.slick-arrow {
+    top: calc((100% - 68px) / 2);
+    position: absolute;
+    right: -40px;
+    color: #ccc;
+    transition: all 0.4s;
+    cursor: pointer;
+    font-size: 30px;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.khoindsp.andi1.slick-initialized.slick-slider {
+    position: relative;
+}
+
+button.next-slick2.slick-arrow {
+    top: calc((100% - 68px) / 2);
+    position: absolute;
+    left: -40px;
+    color: #ccc;
+    transition: all 0.4s;
+    cursor: pointer;
+    font-size: 30px;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+button.next-slick2.slick-arrow:hover , button.prev-slick2.slick-arrow:hover {color: #666;}
+
+.product {
+    padding: 15px;
+}
+
 .row.p-b-25 {
     padding-bottom: 25px;
 }
@@ -93,6 +142,7 @@ span.star-customer {
 .tab-pane h4 {
     margin-bottom: 22px;
     margin-top: 12px;
+    font-size: 20px;
 }
 
 span.information-right {
@@ -133,7 +183,8 @@ section.detailsp {
     max-width: 100%;
     margin: 0;
     transform: inherit !important;
-    height: 1000px;
+    height: 850px;
+    padding-top: 60px;
 }
 .footer a:hover , .detailsp .khoiicon-modal:hover{
     color: #717fe0;
@@ -355,7 +406,6 @@ label.stext-102 {
 .detailsp p.stext-102 {
     color: #666;
     padding-top: 23px;
-    margin: 0;
 }
 
 form p.stext-102 {
@@ -384,7 +434,7 @@ form p.stext-102 {
 .detailsp h4.mtext-105 {
     color: #333;
     padding-bottom: 14px;
-    font-weight: 400;
+    font-weight: bold;
 }
 
 .detailsp .khoiphai-modal-detial {
@@ -395,6 +445,7 @@ form p.stext-102 {
 .detailsp .slick-list.draggable {
     width: 100%;
     position: relative;
+    overflow: visible;
 }
 
 .detailsp .slick-list.draggable img.anh-modal1 {
@@ -467,6 +518,10 @@ form p.stext-102 {
     padding-top: 60px;
     height: 100%;
     border: none;
+}
+
+.body-product .modal-content.detailsp-modal {
+    padding-top: 0;
 }
 
 
