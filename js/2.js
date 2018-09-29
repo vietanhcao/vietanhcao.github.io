@@ -186,6 +186,37 @@ $(function() {
         });
 
     });
+    // rating
+    let item = $('.wrap-rating').find('.item-rating');
+    $(item).on('mouseenter',function () { 
+        let i = 0;
+        var index = $('.wrap-rating .item-rating').index(this);
+        for (i = 0; i <= index; i++) { //- add vi tri mouster 1-3
+            $(item[i]).removeClass('far fa-star');
+            $(item[i]).addClass('fas fa-star');
+        }
+        for (let j = i; j < item.length; j++) {//remove index mouster 3 -5
+            $(item[j]).removeClass('fas fa-star');
+            $(item[j]).addClass('far fa-star');
+            
+        }
+        
+    });
+    
+    
+    
+    
+
+    
+
+
+
+
+
+
+
+
+    
 
 });
 
