@@ -73,9 +73,9 @@
 						<div class="col-sm-2">
 							<form class="fonticon">
 								<!-- <input class="form-control mr-sm-2 timkiem" type="search" placeholder="Search" aria-label="Search"> -->
-								<a href=""><i class="fas fa-search"></i></a>
+								<a href="" data-toggle="modal" data-target="#search-big"><i class="fas fa-search"></i></a>
 								<a href="" data-toggle="modal" data-target="#cart" data-notify="2" class="icon-cart"><i class="fas fa-shopping-cart"></i></a>
-								<a href=""><i class="far fa-heart"></i></a>
+								<a href="" class="icon-heart" data-notify="0"><i class="far fa-heart"></i></a>
 								
 							</form>
 						</div>
@@ -802,7 +802,21 @@
 	</div>
 	<!-- Button trigger modal -->
 	
-	
+	<!-- Modal search-->
+	<div class="modal fade search-big" id="search-big" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+	 aria-hidden="true">
+		<div class="modal-dialog search-big-dialog" role="document">
+			<form class="modal-content wrap-search-header">
+				<button type="button" class="close search-big-close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<button class="flex-c-m">
+					<i class="fas fa-search"></i>
+				</button>
+				<input class="iput-search" type="text" name="search" placeholder="Search...">
+			</form>
+		</div>
+	</div>
 	
 	
 	

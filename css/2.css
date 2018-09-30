@@ -3,6 +3,59 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+.search-big input.iput-search {
+    font-family: roboto;
+    font-size: 50px;
+    line-height: 1.2;
+    color: #333;
+    padding: 0px 30px 0px 0px;
+    width: calc(100% - 70px);
+    height: 100%;
+    background-color: transparent;
+    font-weight: 100;
+}
+
+.search-big input.iput-search::placeholder {
+    color: #333;
+}
+
+.search-big button.close.search-big-close {right: 0px;position: absolute;top: -46px;font-size: 40px;outline: none;}
+
+.search-big button.flex-c-m {
+    font-size: 38px;
+    color: #333;
+    width: 70px;
+    height: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-big form.wrap-search-header {
+    width: 960px;
+    max-width: 100%;
+    height: 120px;
+    border: 2px solid #e6e6e6;
+    background: #fff;
+    flex-wrap: wrap;
+    display: flex;
+    padding-left: 15px;
+    margin: auto;
+    border-radius: 0;
+}
+
+.search-big-dialog {
+    width: auto;
+    max-width: 100%;
+    position: relative;
+}
+
+.search-big.show {background-color: rgba(255,255,255,0.9);}
+
 .detailsp .modal-dialog.detailsp-modal {
     top: 0;
     padding-bottom: 30px;
@@ -1155,6 +1208,26 @@ li.nav-item.chuden.hot {
 }
 .fonticon a.icon-cart {
     position: relative;
+}
+.fonticon a.icon-heart {
+    position: relative;
+}
+
+.fonticon a.icon-heart:after {
+    content: attr(data-notify);
+    font-family: roboto;
+    font-size: 12px;
+    color: #fff;
+    line-height: 16px;
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 3px;
+    right: 0;
+    min-width: 15px;
+    height: 15px;
+    padding: 0 3px;
+    background-color: #717fe0;
 }
 
 .fonticon a {
