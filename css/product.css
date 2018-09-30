@@ -18,7 +18,7 @@ section.sec-relate-product {
 button.prev-slick2.slick-arrow {
     top: calc((100% - 68px) / 2);
     position: absolute;
-    right: -40px;
+    left: -40px;
     color: #ccc;
     transition: all 0.4s;
     cursor: pointer;
@@ -36,7 +36,7 @@ button.prev-slick2.slick-arrow {
 button.next-slick2.slick-arrow {
     top: calc((100% - 68px) / 2);
     position: absolute;
-    left: -40px;
+    right: -40px;
     color: #ccc;
     transition: all 0.4s;
     cursor: pointer;
@@ -1429,7 +1429,7 @@ a.txt2 {
     transition: 0.4s all;
 }
 
-a.txt2:hover {
+a.txt2:hover, .noidungsanpham a.card-title:hover {
     color: #717fe0;
 }
 
@@ -1799,12 +1799,16 @@ p.card-text {
     color: #666;
 }
 
-h5.card-title.text-muted {
+.noidungsanpham a.card-title {
     font-family: sans-serif;
     font-size: 16px;
     line-height: 1.466667;
     color: #999;
     margin-bottom: 6px;
+    cursor: pointer;
+    transition: 0.4s all;
+    display: inline-block;
+    text-decoration: none;
 }
 
 .card-body {

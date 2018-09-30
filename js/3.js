@@ -134,6 +134,17 @@ $(function() {
         
         
     });
+    // [+/- num product ]*/
+    $('.btn-num-product-up').click(function (e) {
+        var numProduct = Number($(this).prev().val()); // lấy giá trị của thàng truoc no va chuyen ve dang so
+        $(this).prev().val(numProduct + 1); //tang gia tri thang input  
+    });
+    $('.btn-num-product-down').click(function (e) {
+        var numProduct = Number($(this).next().val());
+        if (numProduct > 0) {
+            $(this).next().val(numProduct - 1);
+        }
+    });
     //click vao thay doi anh trong modal detail
     $('.slick3-dots li').click(function (e) {
         let danhmucp = $(this).data('anh');
@@ -161,9 +172,9 @@ $(function() {
     $(item).on('mouseenter',function () { 
         let i = 0;
         var index = $('.wrap-rating .item-rating').index(this);
-        for (i = 0; i <= index; i++) { //- add vi tri mouster 1-3
-            $(item[i]).removeClass('far fa-star');
-            $(item[i]).addClass('fas fa-star');
+        for (i = 0; i <= index; i++) { //- add vi tri mouster 0-3
+            $(item[i]).removeClass('far fa-star');//remove star old
+            $(item[i]).addClass('fas fa-star');//add new star
         }
         for (let j = i; j < item.length; j++) {//remove index mouster 3 -5
             $(item[j]).removeClass('fas fa-star');
@@ -172,16 +183,13 @@ $(function() {
         }
         
     });
-
     
-    
-    
+    // slide relate
     $('.khoindsp').slick({
         slidesToShow: 4,
         slidesToScroll: 4,
-        infinite: true,
-        nextArrow: '<button class="next-slick2"><i class="fas fa-angle-left"></i></button>',
-        prevArrow: '<button class="prev-slick2"><i class="fas fa-angle-right"></i></button>',
+        nextArrow: '<button class="next-slick2"><i class="fas fa-angle-right"></i></button>',
+        prevArrow: '<button class="prev-slick2"><i class="fas fa-angle-left"></i></button>',
     });
 
     
