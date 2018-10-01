@@ -1146,6 +1146,10 @@ input.stext-111.size-116 {
     background: white;
 }
 
+input.stext-111.size-116::placeholder, textarea.stext-111.size-120::placeholder {
+    color: #333;
+}
+
 .size-116 {
     width: 100%;
     height: 50px;
