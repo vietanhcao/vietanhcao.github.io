@@ -126,7 +126,7 @@ button.stext-101.checkout {
     margin-bottom: 22px;
 }
 
-select.js-select2 {height: 40px;outline: none;width: 100%;border: none;}
+select.js-select2 {height: 40px;outline: none;width: 100%;border: none;background: transparent;}
 
 .rs1-select2 {border: 1px solid #e6e6e6;border-radius: 2px;background-color: #fff;margin-bottom: 12px;margin-top: 9px;}
 
