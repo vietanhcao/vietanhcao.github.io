@@ -28,17 +28,17 @@ $(function() {
     let emailRgx = /^([a-zA-Z0-9]{3,20})+@+([a-z-]{3,10})\.([a-z]{3,5})$/;
     let namesrex = /^([a-zA-Z-0-9]{3,20})$/;
     let passworkrex = /^([a-zA-Z-0-9]{6,99})$/;
-    $('#namesignup').change(function () { 
-        if (!namesrex.test($('#namesignup').val())){
-            $('#fullname-error').css('opacity',1);
-            $('#fullname-error').css('visibility','visible');
-            $('#checkfullname').css('opacity', 0);
-            
-        }else{
-            $('#fullname-error').css('opacity', 0);
-            $('#fullname-error').css('visibility', 'hiden');
-            $('#checkfullname').css('opacity',1);
-        } 
+    $('#namesignup').change(function () {
+        if (!namesrex.test($('#namesignup').val())) {
+            $('.fullname .help-block').css('opacity', 1);
+            $('.fullname .help-block').css('visibility', 'visible');
+            $('.fullname .fas.fa-check').css('opacity', 0);
+
+        } else {
+            $('.fullname .help-block').css('opacity', 0);
+            $('.fullname .help-block').css('visibility', 'hiden');
+            $('.fullname .fas.fa-check').css('opacity', 1);
+        }
     });
     $('#username').change(function () { 
         if (!namesrex.test($('#username').val())){
@@ -146,25 +146,18 @@ $(function() {
         }
     });
     //click vao thay doi anh trong modal detail
-    $('.slick3-dots li').click(function (e) {
-        let danhmucp = $(this).data('anh');
-
-        $('.slick3-dots li').removeClass('slick-active');
-        $(this).addClass('slick-active');
-        // $('.slick-list.draggable img').removeClass('slick-active-img');
-        $('.detailsp .slick-list.draggable img').each(function (index, element) {
-            if ($(this).hasClass(danhmucp)) {
-                $(this).css({
-                    opacity: '1'
-                })
-            } else {
-                $(this).css({
-                    opacity: '0'
-                })
-            }
-
-        });
-
+    $('.img-slick-large').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.img-slick-small'
+    });
+    $('.img-slick-small').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.img-slick-large',
+        focusOnSelect: true
     });
 
     // rating

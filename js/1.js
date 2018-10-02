@@ -48,14 +48,14 @@ $(function() {
     let passworkrex = /^([a-zA-Z-0-9]{6,99})$/;
     $('#namesignup').change(function () { 
         if (!namesrex.test($('#namesignup').val())){
-            $('#fullname-error').css('opacity',1);
-            $('#fullname-error').css('visibility','visible');
-            $('#checkfullname').css('opacity', 0);
+            $('.fullname .help-block').css('opacity',1);
+            $('.fullname .help-block').css('visibility','visible');
+            $('.fullname .fas.fa-check').css('opacity', 0);
             
         }else{
-            $('#fullname-error').css('opacity', 0);
-            $('#fullname-error').css('visibility', 'hiden');
-            $('#checkfullname').css('opacity',1);
+            $('.fullname .help-block').css('opacity', 0);
+            $('.fullname .help-block').css('visibility', 'hiden');
+            $('.fullname .fas.fa-check').css('opacity',1);
         } 
     });
     $('#username').change(function () { 
