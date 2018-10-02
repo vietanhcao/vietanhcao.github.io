@@ -52,6 +52,8 @@
     width: auto;
     max-width: 100%;
     position: relative;
+    top: 30%;
+    transform: translateY(-50%) !important;
 }
 
 .search-big.show {background-color: rgba(255,255,255,0.9);}
@@ -1373,8 +1375,12 @@ div#fullname-error {
     opacity: 0;
 }
 
-.modal-content.khoi-modal1 {
+.signup .modal-content.khoi-modal1 {
     padding: 40px;
+    position: relative;
+}
+.signup button.close.nutxoa {
+    left: 0;
 }
 
 .tosingup i.fas.fa-long-arrow-alt-right {
@@ -1488,10 +1494,7 @@ a.txt2:hover, .noidungsanpham a.card-title:hover {
 
 
 
-.modal-dialog {
-    top: 40%;
-    transform: translateY(-50%)!important;
-}
+
 
 .modal-dialog.cart-dialog {
     height: 100%;
@@ -1512,7 +1515,7 @@ a.txt2:hover, .noidungsanpham a.card-title:hover {
     height: 100vh;
     margin: inherit !important;
     width: 100%;
-    float: right;
+    
     top: 50%;
     right: 0;
     transition: 0.4s !important;
@@ -1521,7 +1524,7 @@ a.txt2:hover, .noidungsanpham a.card-title:hover {
 
 .modal.fade.signup .modal-dialog.signup-dialog {
     right: -100%;
-    top: 50%;
+    top: 20%;
 }
 
 .inputduoi.email {
@@ -2252,11 +2255,14 @@ a.btn-half-bg.btn-align-center.text-center.nento:hover:after {
     top: 63px;
     left: 0px;
 }
+.navbar1 .col-icon{
+    display: flex;
+}
 a.logo-mobie {
     display: block !important;
     width: 80%;
 }
-.col-sm-2 a {
+.mobie-hiden {
     display: none;
 }
 button.navbar-toggler.collapsed ,button.navbar-toggler{
