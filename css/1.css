@@ -987,7 +987,6 @@ a.quickview {
     bottom: 5%;
     background: white;
     display: block;
-    left: 30%;
     border-radius: 20px;
     color: #333;
     min-width: 139px;
@@ -1032,6 +1031,9 @@ img.card-img-top.room {
 .baoboc {
     overflow: hidden;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @-webkit-keyframes hienra{
@@ -1504,10 +1506,47 @@ a.btn-half-bg.btn-align-center.text-center.nento:hover:after {
         max-width: calc(100% - 300px);
 
     }
+    .card.col-lg-3.col-md-6.col-sm-12 {
+    flex: none;
+    margin: 0;
+    }
     .modal-dialog.detailsp-modal {
     max-width: 100%;
     margin: 0;
     }
+}
+@media (max-width: 991px){
+    div#navbarSupportedContent {
+    background: #ffffffb0;
+    position: absolute;
+    width: 100%;
+    top: 63px;
+    left: 0px;
+}
+a.logo-mobie {
+    display: block !important;
+    width: 80%;
+}
+.col-sm-2 a {
+    display: none;
+}
+button.navbar-toggler.collapsed ,button.navbar-toggler{
+    outline: none;
+}
+
+
+    li.nav-item.active-nav {
+    margin-left: 10px;
+    }
+    nav.navbar.navbar-expand-lg.navbar-light.fixed-top.navbar1 {
+    position: fixed;
+    transition: 0s;
+}
+
+
+}
+.logo-mobie {
+    display: none;
 }
 /* ::placeholder */
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */

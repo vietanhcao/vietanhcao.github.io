@@ -190,6 +190,36 @@ $(function() {
         slidesToScroll: 4,
         nextArrow: '<button class="next-slick2"><i class="fas fa-angle-right"></i></button>',
         prevArrow: '<button class="prev-slick2"><i class="fas fa-angle-left"></i></button>',
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]    
     });
 
     
