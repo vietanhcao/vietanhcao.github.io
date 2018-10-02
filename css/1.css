@@ -784,6 +784,7 @@ a.contentto:hover .chuduoi div {
     width: 100%;
     border: 1px solid #e7e7e7;
     position: relative;
+    margin-bottom: 20px;
 }
 
 .nutscroll button {
