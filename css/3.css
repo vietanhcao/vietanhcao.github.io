@@ -1402,6 +1402,11 @@ a.btn-half-bg.btn-align-center.text-center.nento:hover:after {
     
     }
 }
+@media (max-width: 1199px){
+    .shopping-cart-phai {
+    margin: 0;
+}
+}
 @media (min-width: 576px){
     .modal-dialog.signup-dialog {
     max-width: 520px;
