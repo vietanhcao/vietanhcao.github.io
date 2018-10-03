@@ -184,25 +184,18 @@ $(function() {
         }
     });
     //click vao thay doi anh trong modal detail
-    $('.slick3-dots li').click(function (e) { 
-        let danhmucp = $(this).data('anh');
-    
-        $('.slick3-dots li').removeClass('slick-active');
-        $(this).addClass('slick-active');
-        // $('.slick-list.draggable img').removeClass('slick-active-img');
-        $('.slick-list.draggable img').each(function (index, element) {
-            if ($(this).hasClass(danhmucp)){
-                $(this).css({
-                    opacity: '1'
-                })
-            }else{
-                $(this).css({
-                    opacity: '0'
-                })
-            }
-            
-        });
-
+    $('.img-slick-large').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.img-slick-small'
+    });
+    $('.img-slick-small').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.img-slick-large',
+        focusOnSelect: true
     });
     
     

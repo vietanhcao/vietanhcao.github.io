@@ -4,6 +4,17 @@
 	box-sizing: border-box;
 }
 
+.modal-hiden.modal.fade.detailsp {
+    display: block !important;
+    visibility: hidden;
+    transition: 0.4s all;
+}
+
+.modal-hiden.modal.fade.detailsp.show {
+    visibility: visible;
+    transition: 0.4s all;
+}
+
 .img-slick-small .slick-track .slick-slide div {
     position: relative;
     width: 100%;
