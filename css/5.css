@@ -1201,6 +1201,7 @@ a.btn-half-bg.btn-align-center.text-center.nento:hover:after {
 /* nutlen */
 .nutscroll button.hienthi{
     opacity: 0.7;
+    z-index: 99;
 }
 
 @media (min-width: 1200px){
