@@ -1,8 +1,6 @@
 * {
 	margin: 0;
 	padding: 0;
-    box-sizing: border-box;
-    box-shadow: none;
 }
 .modal-hiden.modal.fade.detailsp {
     display: block !important;
@@ -879,9 +877,10 @@ button.btn.btn-outline-info {
     color: white;
     text-transform: uppercase;
     transition: 0.4s all;
+    box-shadow: none;
 }
 
-button.btn.btn-outline-info:hover {color: #717fe0;background: white;}
+button.btn.btn-outline-info:hover {box-shadow: none;color: #717fe0;background: white;}
 
 .modal-body button.btn.btn-outline-info {
     width: 100%;
@@ -891,11 +890,13 @@ button.btn.btn-outline-info:hover {color: #717fe0;background: white;}
 .btn-singup button.btn.btn-outline-info {
     width: 57%;
     margin: 0;
+    box-shadow: none;
 }
 
 .modal-body button.btn.btn-outline-info:hover {color: white;
     transition: 0.4s;
-    background: #222;}
+    background: #222;
+box-shadow: none;}
 
 .footer li {
     padding-bottom: 6px;
@@ -1247,6 +1248,7 @@ a#navbarDropdownMenuLink:hover {
     justify-content: center;
     align-items: center;
     border: none;
+    box-shadow: none;
 }
 .btn-cart{
     background: #222;
@@ -1261,6 +1263,7 @@ a#navbarDropdownMenuLink:hover {
 }
 .ndslide1 a.btn.btn-outline-success:hover {
     background: #222;
+    box-shadow: none;
 }
 
 .ndslide1 h2 {
